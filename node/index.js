@@ -25,7 +25,7 @@ app.get("/getItens", (req, res) =>{
 });
 app.get("/getSum", (req, res) =>{
     let b = 
-        "SELECT SUM(valor) AS 'Total' FROM produtos";
+        "SELECT FORMAT(SUM(valor), 2) AS 'Total' FROM produtos";
         db.query(b, (err, result) => {
             if(err){
                 res.send(err);
