@@ -18,13 +18,14 @@ function App() {
     })
   }, []);
 
-  // let sum = 0;
-  // listItens.map.forEach(element => {
-  //   sum += element.valor;
-  // });
   return (
     <div className="App">
-      <header className="App-header">
+      <h1>CARRINHO DA FORTE</h1>
+      <table>
+        <tr>
+            <th>Nomes</th>
+            <th>Valores</th>
+        </tr>
         {typeof listItens !== "undefined" &&
         listItens.map((value) =>{
           return <Item
@@ -38,12 +39,12 @@ function App() {
 
         {typeof sumItens !== "undefined" &&
         sumItens.map((value) =>{
-          return <div className="Sum">
-            <p>valor total:</p>
-            <p>{value.Total}</p>
-          </div>
+          return <tr className="Sum">
+            <td>valor total:</td>
+            <td>{value.Total}</td>
+          </tr>
         })}
-      </header>
+      </table>
     </div>
   );
 }

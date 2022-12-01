@@ -12,18 +12,6 @@ const db = mysql.createPool({
 app.use(cors());
 app.use(express.json());
 
-// app.get("/", (req, res) => {
-//     // let a = 
-//     // "insert into produtos(nome, valor) values('Bala-Morango-Halls-28g', 1.09)";
-
-//     let a = 
-//     "select * from produtos";
-//     db.query(a, (r, result) => {
-//         res.send(r);
-//         res.send(result);
-//     })
-// });
-
 app.get("/getItens", (req, res) =>{
     let a = 
         "select * from produtos";
