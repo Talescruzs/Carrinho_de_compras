@@ -29,12 +29,9 @@ function App() {
         {typeof listItens !== "undefined" &&
         listItens.map((value) =>{
           return <Item
-          key={value.id}
-          listItens={listItens}
-          setListItens={setListItens}
           name = {value.nome}
           price = {value.valor}
-          ></Item>;
+          ></Item>
         })}
 
         {typeof sumItens !== "undefined" &&

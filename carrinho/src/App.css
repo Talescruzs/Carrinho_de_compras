@@ -25,16 +25,6 @@ td {
   text-align: center;
 }
 
-
 .Sum {
   background-color: #707a8d;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
